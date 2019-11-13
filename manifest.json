@@ -1,0 +1,25 @@
+{
+  "name": "Video Truncator",
+  "version": "1.0",
+  "description": "Start or end vids",
+  "permissions": [
+  	"activeTab",
+  	 "declarativeContent",
+  	 "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+	   {
+	     "matches": ["*://*.youtube.com/*"],
+	     "js": ["contentScript.js"]
+	   }
+   ],
+  "browser_action": {
+    "default_title": "Video truncator",
+    "default_popup":"popup.html"
+  },
+  "manifest_version": 2
+}
