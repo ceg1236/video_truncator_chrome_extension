@@ -7,7 +7,7 @@ chrome.storage.local.get('truncator', function(result) {
 			let timeCheck = setInterval( () => {
 				if (video.currentTime + 10 > duration) {
 					video.currentTime += 10;
-					console.log('time low');
+					console.log('TRUNCATE');
 					clearInterval(timeCheck);
 				}
 			}, 1000);

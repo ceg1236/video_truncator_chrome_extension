@@ -1,7 +1,7 @@
 {
   "name": "Video Truncator",
   "version": "1.0",
-  "description": "Start or end vids",
+  "description": "Truncate videos 10 seconds short",
   "permissions": [
   	"activeTab",
   	 "declarativeContent",
